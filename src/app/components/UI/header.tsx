@@ -17,7 +17,7 @@ export default function Header() {
   return siteConfig.navItems.map(item => {
     const isActive = pathname === item.href
     return (
-      <NavbarItem className='flex-wrap' key={item.href}>
+      <NavbarItem className='justify-center' key={item.href}>
         <Link
           color='foreground'
           href={item.href}
@@ -33,26 +33,27 @@ export default function Header() {
 }
 
   return (
-    <Navbar className='h-auto flex-wrap'>
-      {/* <NavbarBrand>
-        <p className='font-bold text-inherit'>Форма</p>
-      </NavbarBrand> */}
-      <NavbarContent
-        className='hidden sm:flex gap-4 flex-wrap'
-        justify='center'
-      >
-        {getNavItems()}
-      </NavbarContent>
-      <NavbarContent justify='end'>
-        <NavbarItem className='hidden lg:flex'>
-          <Link href='#'>Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color='primary' href='#' variant='flat'>
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-    </Navbar>
+    <>
+      <Navbar>
+        <NavbarContent justify='end'>
+          <NavbarItem className='hidden lg:flex'>
+            <Link href='#'>Login</Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Button as={Link} color='primary' href='#' variant='flat'>
+              Sign Up
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
+      </Navbar>
+      <Navbar isBordered>
+        <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+          {getNavItems()}
+        </NavbarContent>
+        <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+          {getNavItems()}
+        </NavbarContent>
+      </Navbar>
+    </>
   )
 }
