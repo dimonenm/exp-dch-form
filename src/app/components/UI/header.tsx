@@ -47,10 +47,10 @@ export default function Header() {
         </NavbarContent>
       </Navbar>
       <Navbar isBordered>
-        <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+        <NavbarContent className='hidden sm:flex gap-4'>
           {getNavItems()}
         </NavbarContent>
-        <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+        <NavbarContent className='hidden sm:flex gap-4'>
           {getNavItems()}
         </NavbarContent>
       </Navbar>
