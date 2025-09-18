@@ -7,7 +7,9 @@
 export function Auth() {
 
     return (
-        <div>auth</div>
+        <div>auth
+            
+        </div>
     )
 
 

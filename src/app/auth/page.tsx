@@ -3,7 +3,7 @@ import { Auth } from './Auth'
 
 export const metadata: Metadata = {
     title: 'Auth',
-    description: 'auth page',
+  description: 'auth page',
 }
 
 export default function AuthPage() {
