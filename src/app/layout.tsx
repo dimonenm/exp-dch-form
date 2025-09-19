@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
-import Header from './components/UI/Header2'
+import Header from './components/UI/Header'
 import { Providers } from '@/providers/providers'
+import HeaderMenu from './components/HeaderMenu'
 
 
 
@@ -32,7 +33,8 @@ export default function RootLayout({
         className={`light ${inter.variable} antialiased` }
       >
         <Providers >
-          <Header/>
+          {/* <Header/> */}
+          <HeaderMenu/>
           {children}
         </Providers>
       </body>
