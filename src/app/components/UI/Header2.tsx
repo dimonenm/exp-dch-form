@@ -22,7 +22,7 @@ return (
         <NavbarItem className='hidden lg:flex'>
         </NavbarItem>
         <NavbarItem>
-            <Button as={Link} color='primary' radius='sm' href='#' >
+            <Button as={Link} color='primary' size='md' radius='sm' href='/auth' >
         Войти     
             </Button>
         </NavbarItem>
