@@ -7,7 +7,7 @@ export function Auth() {
     const [action, setAction] = useState(1);
 
     return (
-        <div className="flex justify-center items-center py-20 h-screen  ">
+        <div className="flex justify-center items-center py-50 h-auto overflow-hidden">
             <div className="flex flex-col justify-center items-center min-w-96 border-1 border-solid border-[#EDEDED] rounded-lg p-10 shadow-xl">
                 <div className="mt-10 text-center text-xl font-medium  text-gray-900 mb-5 justify-start">
                     Авторизация

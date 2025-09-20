@@ -12,10 +12,10 @@ export default function AuthLayout({
     children: React.ReactNode
 }>) {
     return (
-    <>
-    <AuthHeader />
-        {children}
-    </>
+        <>
+            <AuthHeader />
+            {children}
+        </>
 
     )
 }
