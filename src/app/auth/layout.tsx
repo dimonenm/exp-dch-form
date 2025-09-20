@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import AuthHeader from './AuthHeader'
 
 export const metadata: Metadata = {
     title: 'Auth',
@@ -10,5 +11,11 @@ export default function AuthLayout({
 }: Readonly<{
     children: React.ReactNode
 }>) {
-    return <div>{children}</div>
+    return (
+    <>
+    <AuthHeader />
+        {children}
+    </>
+
+    )
 }

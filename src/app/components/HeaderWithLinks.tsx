@@ -10,7 +10,7 @@ import {
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function HeaderMenu() {
+export default function HeaderWithLinks() {
   const pathname = usePathname()
 
   const getNavItems = () => {
@@ -34,23 +34,20 @@ export default function HeaderMenu() {
 
   return (
     <>
-      {/* <Navbar>
-        <NavbarContent justify='end'>
-          <NavbarItem>
-            <Button as={Link} color='primary' href='#'>
-              Войти
-            </Button>
-          </NavbarItem>
-        </NavbarContent>
-      </Navbar> */}
       <Navbar isBordered>
         <NavbarBrand>
-        <p className="font-bold text-md text-blue-600">Форма о фактах происшествий</p>
+        <p className="justify-start font-bold text-md text-blue-600">Форма о фактах происшествий</p>
         </NavbarBrand>
         <NavbarContent justify='center' className='hidden sm:flex gap-4'>
           {getNavItems()}
         </NavbarContent>
-       
+        <NavbarContent justify='end'>
+          <NavbarItem>
+            <Button as={Link} color='primary' href='/auth'>
+              Войти
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
       </Navbar>
     </>
   )

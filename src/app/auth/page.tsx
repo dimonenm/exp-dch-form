@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { Auth } from './Auth'
+import AuthHeader from './AuthHeader'
 
 export const metadata: Metadata = {
     title: 'Auth',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
 
 export default function AuthPage() {
     return (
+    <>
+    {/* <AuthHeader/> */}
     <Auth />
+    </>
   )
 }

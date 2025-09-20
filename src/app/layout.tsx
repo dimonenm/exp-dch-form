@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
-import Header from './components/UI/Header'
 import { Providers } from '@/providers/providers'
-import HeaderMenu from './components/HeaderMenu'
+import HeaderWithLinks from './components/HeaderWithLinks'
 
 
 
@@ -23,10 +22,12 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
+ 
   return (
     <html className="light" lang='en'>
       <body
@@ -34,7 +35,7 @@ export default function RootLayout({
       >
         <Providers >
           {/* <Header/> */}
-          <HeaderMenu/>
+          {/* <HeaderWithLinks/> */}
           {children}
         </Providers>
       </body>
