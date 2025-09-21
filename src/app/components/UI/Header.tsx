@@ -18,8 +18,7 @@ return (
         <NavbarBrand>
         <p className="font-bold text-md text-blue-600">Форма о фактах происшествий</p>
         </NavbarBrand>
-        <NavbarContent justify='end'>
-        
+        <NavbarContent justify='end'>     
         <NavbarItem>
             <Button as={Link} color='primary' size='md' radius='sm' href='/auth' >
         Войти     
