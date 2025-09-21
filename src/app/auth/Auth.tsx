@@ -46,11 +46,11 @@ export function Auth() {
                             Войти
                         </Button>
                     </div>
-                    {action && (
+                    {/* {action && (
                         <div className="text-small text-default-500">
                             Action: <code>{action}</code>
                         </div>
-                    )}
+                    )} */}
                 </Form>
             </div>
         </div>
