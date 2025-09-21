@@ -13,7 +13,7 @@ export default function AuthLayout({
 }>) {
     return (
         <>
-            <Header/>
+            {/* <Header/> */}
             {children}
         </>
 

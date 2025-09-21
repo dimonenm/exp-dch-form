@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/providers/providers'
 import HeaderWithLinks from './components/Header'
+import Header from './components/Header'
 
 
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`light ${inter.variable} antialiased`}
       >
         <Providers >
+          <Header/>
           {children}
         </Providers>
       </body>
