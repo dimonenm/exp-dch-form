@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/providers/providers'
-import HeaderWithLinks from './components/HeaderWithLinks'
+import HeaderWithLinks from './components/Header'
 
 
 
@@ -27,11 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
 
- 
+
   return (
     <html className="light" lang='en'>
       <body
-        className={`light ${inter.variable} antialiased` }
+        className={`light ${inter.variable} antialiased`}
       >
         <Providers >
           {/* <Header/> */}

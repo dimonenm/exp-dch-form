@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import AuthHeader from './AuthHeader'
+import Header from '../components/Header'
 
 export const metadata: Metadata = {
     title: 'Auth',
@@ -13,7 +13,7 @@ export default function AuthLayout({
 }>) {
     return (
         <>
-            <AuthHeader />
+            <Header/>
             {children}
         </>
 
