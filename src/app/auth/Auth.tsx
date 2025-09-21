@@ -1,10 +1,13 @@
 "use client";
 
 import { Button, Form, Input } from "@heroui/react";
-import { useState } from "react";
+
 
 export function Auth() {
-    const [action, setAction] = useState(1);
+    const submit = ()=>{
+
+        console.log('submit');
+    }
 
     return (
         <div className="flex justify-center items-center py-50 h-auto overflow-hidden">
@@ -14,13 +17,7 @@ export function Auth() {
                 </div>
                 <Form
                     className="w-full max-w-xs flex flex-col gap-4"
-                    onReset={() => setAction(2)}
-                    onSubmit={(e) => {
-                        e.preventDefault();
-                        const data = Object.fromEntries(new FormData(e.currentTarget));
-
-                        setAction(3);
-                    }}
+                    onSubmit={submit}
                 >
                     <Input
                         isRequired
@@ -46,11 +43,6 @@ export function Auth() {
                             Войти
                         </Button>
                     </div>
-                    {/* {action && (
-                        <div className="text-small text-default-500">
-                            Action: <code>{action}</code>
-                        </div>
-                    )} */}
                 </Form>
             </div>
         </div>
