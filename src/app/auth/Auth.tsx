@@ -10,7 +10,7 @@ export function Auth() {
     }
 
     return (
-        <div className="flex justify-center items-center py-60 h-auto overflow-hidden">
+        <div className="flex justify-center items-center h-screen overflow-hidden">
             <div className="flex flex-col justify-center items-center min-w-96 border-1 border-solid border-[#EDEDED] rounded-lg p-10 shadow-xl">
                 <div className="mt-5 text-center text-xl font-medium  text-gray-900 mb-5 justify-start">
                     Авторизация
