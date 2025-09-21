@@ -30,7 +30,7 @@ export default function Header() {
       )
     })
   }
-  
+
 
   return (
     <>
@@ -38,20 +38,21 @@ export default function Header() {
         <NavbarBrand>
           <p className="justify-start font-bold text-md text-blue-600">Форма о фактах происшествий</p>
         </NavbarBrand>
-        {pathname === '/home' &&
+        {pathname === '/mainPage' &&
           <NavbarContent justify='center' className='hidden sm:flex gap-4'>
             {getNavItems()}
           </NavbarContent>
         }
-        {pathname === '/' &&
-          <NavbarContent justify='end'>
-            <NavbarItem>
-              <Button as={Link} color='primary' href='/auth'>
-                Войти
-              </Button>
-            </NavbarItem>
-          </NavbarContent>
-        }
+        <NavbarContent justify='end'>
+          <NavbarItem>
+            {pathname === '/' ? <Button as={Link} color='primary' href='/auth'>
+              Войти
+            </Button> : pathname === '/mainPage' ?
+            <Button as={Link} color='default' href='/auth'>
+              Выйти
+            </Button> : null}
+          </NavbarItem>
+        </NavbarContent>
       </Navbar>
     </>
   )
