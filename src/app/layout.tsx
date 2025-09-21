@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`light ${inter.variable} antialiased`}
       >
-        <div className='flex flex-col h-screen overflow-auto'>
+        <div className='flex flex-col h-screen overflow-hidden'>
           <Providers >
           <Header/>
           {children}
