@@ -38,7 +38,7 @@ export default function Header() {
         <NavbarBrand>
           <p className="justify-start font-bold text-md text-blue-600">Форма о фактах происшествий</p>
         </NavbarBrand>
-        {pathname === '/' &&
+        {pathname === '/home' &&
           <NavbarContent justify='center' className='hidden sm:flex gap-4'>
             {getNavItems()}
           </NavbarContent>
