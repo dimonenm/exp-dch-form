@@ -25,7 +25,7 @@ export function Auth() {
                         // label="Username"
                         labelPlacement="outside"
                         name="username"
-                        placeholder="Enter your username"
+                        placeholder="Username"
                         type="text"
                     />
 
@@ -35,7 +35,7 @@ export function Auth() {
                         // label="Email"
                         labelPlacement="outside"
                         name="password"
-                        placeholder="Enter your password"
+                        placeholder="Password"
                         type="password"
                     />
                     <div className="flex gap-2">
