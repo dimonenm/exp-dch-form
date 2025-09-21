@@ -34,8 +34,6 @@ export default function RootLayout({
         className={`light ${inter.variable} antialiased`}
       >
         <Providers >
-          {/* <Header/> */}
-          {/* <HeaderWithLinks/> */}
           {children}
         </Providers>
       </body>
