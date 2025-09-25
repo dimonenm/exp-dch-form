@@ -1,5 +1,5 @@
 
-import { Tabs, Tab, Card, CardBody } from "@heroui/react";
+import { Tabs, Tab, Card, CardBody, Input } from "@heroui/react";
 
 export default function TabMenu() {
     const tabs = [
@@ -30,7 +30,12 @@ export default function TabMenu() {
                 {(item) => (
                     <Tab key={item.id} title={item.label}>
                         <Card className='mt-8'>
-                            <CardBody>{item.content}</CardBody>
+                            <CardBody className='grid grid-cols-4 gap-4'>
+                                {/* {item.content} */}
+                                <Input />
+                                <Input />
+                                <Input />
+                            </CardBody>
                         </Card>
                     </Tab>
                 )}
