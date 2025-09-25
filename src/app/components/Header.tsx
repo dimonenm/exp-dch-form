@@ -9,6 +9,7 @@ import {
 } from '@heroui/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import UserAvatar from './UI/UserAvatar'
 
 export default function Header() {
   const pathname = usePathname()
@@ -45,12 +46,16 @@ export default function Header() {
         }
         <NavbarContent justify='end'>
           <NavbarItem>
+            {pathname === '/mainPage' ? <UserAvatar /> : null}
+          </NavbarItem>
+          <NavbarItem>
             {pathname === '/' ? <Button as={Link} color='primary' href='/auth'>
               Войти
             </Button> : pathname === '/mainPage' ?
-            <Button as={Link} color='default' href='/auth'>
-              Выйти
-            </Button> : null}
+                <Button as={Link} color='default' href='/auth'>
+                  Выйти
+              </Button>
+              : null}
           </NavbarItem>
         </NavbarContent>
       </Navbar>
