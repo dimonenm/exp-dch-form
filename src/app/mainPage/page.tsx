@@ -1,5 +1,6 @@
 import { Metadata } from "next"
-import { Main } from "./Main"
+import { Dashboard } from "./DashBoard"
+
 
 
 export const metadata: Metadata = {
@@ -10,8 +11,7 @@ export const metadata: Metadata = {
 export default function MainPage() {
     return (
         <>
-            <Main/>
-            
+            <Dashboard />   
         </>
     )
 }
