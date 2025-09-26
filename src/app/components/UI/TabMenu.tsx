@@ -37,6 +37,14 @@ export default function TabMenu() {
                                 <Input />
                             </CardBody>
                         </Card>
+                        <Card className='mt-8'>
+                            <CardBody className='grid grid-cols-4 gap-4'>
+                                {/* {item.content} */}
+                                <Input />
+                                <Input />
+                                <Input />
+                            </CardBody>
+                        </Card>
                     </Tab>
                 )}
             </Tabs>
