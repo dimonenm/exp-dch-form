@@ -45,12 +45,12 @@ export default function DropdownComponent() {
 
     return (
         <ButtonGroup variant="solid">
-            < Button>
-                Выбор биолога: {labelsMap[selectedOptionValue]}
+            < Button >
+                Выбор биолога:{labelsMap[selectedOptionValue]}
             </Button>
             <Dropdown placement="bottom-end">
                 <DropdownTrigger>
-                    <Button isIconOnly>
+                    <Button isIconOnly >
                         <ChevronDownIcon />
                     </Button>
                 </DropdownTrigger>

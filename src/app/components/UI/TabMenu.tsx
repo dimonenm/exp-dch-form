@@ -46,7 +46,7 @@ export default function TabMenu() {
                                 <Input />
                             </CardBody>
                         </Card>
-                        <Card className='mt-8'>
+                        <Card className='mt-8 w-[95%]'>
                             <CardBody className='grid grid-cols-4 gap-4'>
                                 {/* {item.content} */}
                                 <Input />
@@ -54,6 +54,7 @@ export default function TabMenu() {
                                 <Input />
                             </CardBody>
                         </Card>
+
                     </Tab>
                 )}
             </Tabs>
