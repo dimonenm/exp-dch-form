@@ -1,5 +1,6 @@
 
 import { Tabs, Tab, Card, CardBody, Input } from "@heroui/react";
+import DropdownComponent from "./DropdownComponent";
 
 export default function TabMenu() {
     const tabs = [
@@ -25,11 +26,19 @@ export default function TabMenu() {
     ];
 
     return (
-        <div className="flex w-full flex-col">
+        <>
             <Tabs aria-label="Dynamic tabs" color='primary' radius='full' size='sm' items={tabs}>
                 {(item) => (
                     <Tab key={item.id} title={item.label}>
-                        <Card className='mt-8'>
+                        <Card className='mt-8 w-[95%]'>
+                            <CardBody className='grid grid-cols-4 gap-4'>
+                                {/* {item.content} */}
+                                <Input />
+                                <Input />
+                                <Input />
+                            </CardBody>
+                        </Card>
+                        <Card className='mt-8 w-[95%]'>
                             <CardBody className='grid grid-cols-4 gap-4'>
                                 {/* {item.content} */}
                                 <Input />
@@ -40,6 +49,6 @@ export default function TabMenu() {
                     </Tab>
                 )}
             </Tabs>
-        </div>
+        </>
     );
 }
