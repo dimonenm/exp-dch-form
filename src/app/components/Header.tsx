@@ -47,7 +47,7 @@ export default function Header() {
         <NavbarContent justify='end'>
           <NavbarItem>
             {pathname === '/mainPage' ? <UserAvatar /> : null}
-          </NavbarItem>
+          </NavbarItem> 
           <NavbarItem>
             {pathname === '/' ? <Button as={Link} color='primary' href='/auth'>
               Войти

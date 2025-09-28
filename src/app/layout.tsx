@@ -24,11 +24,11 @@ export default function RootLayout({
 
 
   return (
-    <html className="light" lang='en'>
+    <html className="light" lang='en' >
       <body
-        className={`light ${inter.variable} antialiased`}
+        className={`light ${inter.variable} antialiased min-w-[900px] w-screen`}
       >
-        <div className='flex flex-col h-screen overflow-hidden'>
+        <div className='flex flex-col h-screen overflow-hidden '>
           <Providers >
           <Header/>
           {children}
