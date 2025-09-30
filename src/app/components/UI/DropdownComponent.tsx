@@ -9,7 +9,9 @@ import {
     DropdownItem,
 } from "@heroui/react";
 
-export const ChevronDownIcon = () => {
+
+
+export const ChevronDownIcon = ({ name }: IDropdownComponent) => {
     return (
         <svg fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -23,14 +25,6 @@ export const ChevronDownIcon = () => {
 
 export default function DropdownComponent() {
     const [selectedOption, setSelectedOption] = React.useState(new Set(["expert1"]));
-
-    const descriptionsMap = {
-        merge:
-            "All commits from the source branch are added to the destination branch via a merge commit.",
-        squash:
-            "All commits from the source branch are added to the destination branch as a single commit.",
-        rebase: "All commits from the source branch are added to the destination branch individually.",
-    };
 
 
 
