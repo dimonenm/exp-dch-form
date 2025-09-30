@@ -1,5 +1,5 @@
 'use state'
-import React from "react";
+import React, { useState } from "react";
 import {
     Button,
     ButtonGroup,
@@ -11,7 +11,7 @@ import {
 
 
 
-export const ChevronDownIcon = ({ name }: IDropdownComponent) => {
+export const ChevronDownIcon = () => {
     return (
         <svg fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -24,7 +24,7 @@ export const ChevronDownIcon = ({ name }: IDropdownComponent) => {
 
 
 export default function DropdownComponent() {
-    const [selectedOption, setSelectedOption] = React.useState(new Set(["expert1"]));
+    const [selectedOption, setSelectedOption] = useState(new Set(["expert1"]));
 
 
 
