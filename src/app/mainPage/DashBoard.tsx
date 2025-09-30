@@ -13,7 +13,9 @@ export function Dashboard() {
                     <DropdownComponent />
                     <DropdownComponent />
                     <DropdownComponent />
-
+                    <Button color="primary" variant="bordered">
+                        Bordered
+                    </Button>
                 </div>
                 <div className='grid absolute w-screen 2xl:block '>
                 <TabMenu />

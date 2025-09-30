@@ -1,6 +1,5 @@
 
 import { Tabs, Tab, Card, CardBody, Input } from "@heroui/react";
-import DropdownComponent from "./DropdownComponent";
 
 export default function TabMenu() {
     const tabs = [
@@ -54,7 +53,6 @@ export default function TabMenu() {
                                 <Input />
                             </CardBody>
                         </Card>
-
                     </Tab>
                 )}
             </Tabs>
