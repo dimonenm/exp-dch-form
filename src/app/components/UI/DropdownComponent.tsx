@@ -24,7 +24,7 @@ export const ChevronDownIcon = () => {
 
 
 export default function DropdownComponent() {
-    const [selectedOption, setSelectedOption] = useState(new Set(["expert1"]));
+    const [selectedOption, setSelectedOption] = useState(new Set([""]));
 
 
 
@@ -33,6 +33,8 @@ export default function DropdownComponent() {
         expert2: "Сорокина Е.Ю.",
         expert3: "Подмогильная В.С.",
     };
+
+
 
     // Convert the Set to an Array and get the first value.
     const selectedOptionValue = Array.from(selectedOption)[0];
