@@ -6,11 +6,11 @@ import Header from './components/Header'
 
 
 
-// const inter = Inter({
-//   variable: '--font-inter-sans',
-//   subsets: ['latin'],
-//   preload: false
-// })
+const inter = Inter({
+  variable: '--font-inter-sans',
+  subsets: ['latin'],
+  preload: false
+})
 
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html className="light" lang='en' >
       <body
-        className={`light antialiased min-w-[900px] w-screen`}
+        className={`light ${inter.variable} antialiased min-w-[900px] w-screen`}
       >
         <div className='flex flex-col h-screen'>
           <Providers >

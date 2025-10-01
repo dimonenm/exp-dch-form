@@ -13,7 +13,7 @@ export function Dashboard() {
                     <DropdownComponent />
                     <DropdownComponent />
                     <DropdownComponent />
-                    <Button className="max-w-40 bg-[#CCE2FC] text-blue-500 font-bold">
+                    <Button className="max-w-40 bg-[#CCE2FC] text-sm text-blue-500 font-bold">
                         Добавить запись
                     </Button>
                 </div>
