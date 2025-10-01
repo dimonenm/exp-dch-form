@@ -39,8 +39,9 @@ export default function DropdownComponent() {
 
     return (
         <ButtonGroup variant="solid">
-            < Button className="whitespace-pre-line max-w-60 h-15 text-left">
-                Выбор биолога:{labelsMap[selectedOptionValue]}
+            < Button className="w-60 min-w-40 h-15 text-left">
+                <p className="text-[0.8rem] m-0 p-0 text-gray-700">Выбор биолога:</p>
+                <p className="text-l">{labelsMap[selectedOptionValue]}</p>
             </Button>
             <Dropdown placement="bottom-end">
                 <DropdownTrigger>
