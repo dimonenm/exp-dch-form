@@ -39,7 +39,7 @@ export default function DropdownComponent() {
 
     return (
         <ButtonGroup variant="solid">
-            < Button className="w-60 min-w-40 h-15 text-left">
+            < Button style={{ lineHeight: '1.8em' }} className="grid grid-cols-1 w-60 min-w-30 h-15 text-left ">
                 <p className="text-[0.8rem] m-0 p-0 text-gray-700">Выбор биолога:</p>
                 <p className="text-l">{labelsMap[selectedOptionValue]}</p>
             </Button>
