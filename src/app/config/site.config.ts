@@ -1,6 +1,6 @@
 export const siteConfig = {
   navItems: [
-    { href: '/', label: 'Список' },
+    { href: '/mainPage', label: 'Список' },
     { href: '/preferences', label: 'Настройки' },
   ],
 }
