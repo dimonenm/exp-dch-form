@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Dashboard } from "./Dashboard"
+import { Dashboard } from "./DashBoard"
 
 
 
